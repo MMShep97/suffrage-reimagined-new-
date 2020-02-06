@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store/store'
 import VueGtag from 'vue-gtag'
 
 import { BContainer, BRow, BCol, BCard, BCardText, BNav, BNavItem, BNavItemDropdown, BDropdownItem, BCarousel, BCarouselSlide, BImgLazy } from 'bootstrap-vue'
@@ -37,6 +36,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
+import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
@@ -46,7 +46,6 @@ Vue.use(VueGtag, {
 
 new Vue({
   router,
-  store,
   render: h => h(App)
 }).$mount('#app')
         
