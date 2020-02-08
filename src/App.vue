@@ -1,9 +1,11 @@
 <template>
   <transition name="fade" appear>
+      <smooth-scrollbar>
     <div id="app">
-      <comparison-portal v-if="true" />
+      <comparison-portal v-if="false" />
       <app-container v-else/>
     </div>
+    </smooth-scrollbar>
   </transition>
 </template>
 

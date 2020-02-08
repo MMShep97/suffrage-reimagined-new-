@@ -4,7 +4,7 @@ import router from './router'
 import VueGtag from 'vue-gtag'
 
 import { BContainer, BRow, BCol, BCard, BCardText, BNav, BNavItem, BNavItemDropdown, BDropdownItem, BCarousel, BCarouselSlide, BImgLazy } from 'bootstrap-vue'
-import { MdToolbar, MdIcon, MdButton, MdDrawer, MdList, MdContent, MdDivider, MdSubheader} from 'vue-material/dist/components'
+import { MdToolbar, MdIcon, MdButton, MdDrawer, MdList, MdContent, MdDivider, MdSubheader, MdCard, MdRipple} from 'vue-material/dist/components'
 import SmoothScrollbar from 'vue-smooth-scrollbar'
 
 // Bootstrap-vue components
@@ -21,6 +21,8 @@ Vue.component('b-carousel', BCarousel)
 Vue.component('b-carousel-slide', BCarouselSlide)
 Vue.component('b-img-lazy', BImgLazy)
 
+Vue.use(SmoothScrollbar)
+
 // Material UI components
 Vue.use(MdToolbar)
 Vue.use(MdIcon)
@@ -30,7 +32,8 @@ Vue.use(MdList)
 Vue.use(MdContent)
 Vue.use(MdDivider)
 Vue.use(MdSubheader)
-Vue.use(SmoothScrollbar)
+Vue.use(MdCard)
+Vue.use(MdRipple)
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
