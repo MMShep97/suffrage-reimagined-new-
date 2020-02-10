@@ -163,7 +163,11 @@
 
 /* Forces into correct size . . gets rid of unwanted white space below nav */
 .headroom-container {
-    height: 48px !important;
+    height: 48px;
+}
+
+.nav-container {
+    height: 48px;
 }
 
     .nav-header {

@@ -27,7 +27,7 @@
                 <b-col>
                     <md-card class="old-site-card site-card" md-with-hover>
                         <md-ripple>
-                            <a href="http://sdrc.lib.uiowa.edu/exhibits/suffrage/index.html">
+                            <a href="https://web.archive.org/web/20190316221349/http://sdrc.lib.uiowa.edu/exhibits/suffrage/index.html">
                             <!-- <router-link to="/1854">  -->
                                 <md-card-header>
                                     <md-card-header-text>
