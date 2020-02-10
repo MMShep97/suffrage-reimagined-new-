@@ -1,11 +1,9 @@
 <template>
   <transition name="fade" appear>
-      <smooth-scrollbar>
     <div id="app">
-      <comparison-portal v-if="false" />
+      <comparison-portal v-if="!clicked" @clicked="onClickStartApp" />
       <app-container v-else/>
     </div>
-    </smooth-scrollbar>
   </transition>
 </template>
 
@@ -16,6 +14,18 @@ export default {
   components: {
     AppContainer,
     ComparisonPortal
+  },
+
+  data() {
+    return {
+      clicked: false,
+    }
+  },
+
+  methods: {
+    onClickStartApp: function() {
+      this.clicked = true;
+    }
   }
 }
 </script>

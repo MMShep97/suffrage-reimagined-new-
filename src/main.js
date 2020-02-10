@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import VueGtag from 'vue-gtag'
 
-import { BContainer, BRow, BCol, BCard, BCardText, BNav, BNavItem, BNavItemDropdown, BDropdownItem, BCarousel, BCarouselSlide, BImgLazy } from 'bootstrap-vue'
+import { BContainer, BRow, BCol, BCard, BCardText, BNav, BNavItem, BNavItemDropdown, BDropdownItem, BCarousel, BCarouselSlide, BImgLazy, BJumbotron } from 'bootstrap-vue'
 import { MdToolbar, MdIcon, MdButton, MdDrawer, MdList, MdContent, MdDivider, MdSubheader, MdCard, MdRipple} from 'vue-material/dist/components'
 import SmoothScrollbar from 'vue-smooth-scrollbar'
 
@@ -20,6 +20,7 @@ Vue.component('b-dropdown-item', BDropdownItem)
 Vue.component('b-carousel', BCarousel)
 Vue.component('b-carousel-slide', BCarouselSlide)
 Vue.component('b-img-lazy', BImgLazy)
+Vue.component('b-jumbotron', BJumbotron)
 
 Vue.use(SmoothScrollbar)
 
