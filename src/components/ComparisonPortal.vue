@@ -17,18 +17,15 @@
                             <hr class="my-4 line-separator">
                         </template></b-jumbotron>
                 </b-col>
-                <!-- <b-col>test</b-col>
-                <b-col>
 
-                </b-col>
-                <b-col>test</b-col> -->
             </b-row>
             <b-row align-v="center">
-                <b-col>
+                <b-col sm="6" cols="6">
                     <md-card class="old-site-card site-card" md-with-hover>
                         <md-ripple>
-                            <a href="https://web.archive.org/web/20190316221349/http://sdrc.lib.uiowa.edu/exhibits/suffrage/index.html">
-                            <!-- <router-link to="/1854">  -->
+                            <a
+                                href="https://web.archive.org/web/20190316221349/http://sdrc.lib.uiowa.edu/exhibits/suffrage/index.html">
+                                <!-- <router-link to="/1854">  -->
                                 <md-card-header>
                                     <md-card-header-text>
                                         <div class="md-title">Women's Suffrage</div>
@@ -39,14 +36,16 @@
                                         <img :src="libraryLogo" alt="People">
                                     </md-card-media>
                                 </md-card-header>
-</a>
+                                <md-card-content class="card-content">Test Content</md-card-content>
+
+                            </a>
                             <!-- </router-link> -->
                         </md-ripple>
 
                     </md-card>
                 </b-col>
                 <!-- <b-col></b-col><b-col><b-img-lazy :src="oldBook"></b-img-lazy></b-col> -->
-                <b-col>
+                <b-col sm="6" cols="6">
                     <md-card class="new-site-card site-card" md-with-hover>
                         <md-ripple>
 
@@ -56,11 +55,13 @@
                                         <div class="md-title">Suffrage Reimagined</div>
                                         <div class="md-subhead">The New Scrapbook</div>
                                     </md-card-header-text>
+                                    
 
                                     <md-card-media>
                                         <img :src="libraryLogo" alt="People">
                                     </md-card-media>
                                 </md-card-header>
+                                <md-card-content class="card-content">Test Content</md-card-content>
 
                             </router-link>
                         </md-ripple>
@@ -68,7 +69,8 @@
                     </md-card>
                 </b-col>
             </b-row>
-            <b-row align-v="end">
+            <b-row align-v="end" class="iowa-ratify-image-container">
+                <b-img-lazy class="iowa-ratify-image" :src="iowaRatification"></b-img-lazy>
                 <!-- <b-col>test</b-col>
                 <b-col>test</b-col>
                 <b-col>
@@ -82,18 +84,23 @@
 <script>
     import oldBook from './../assets/scrapbook-extras/comparison-portal/old-book.jpg'
     import libraryLogo from '../../public/images/iowa_logo_retro.png'
+    import iowaRatification from "./../assets/scrapbook-extras/comparison-portal/iowa-ratify.png"
 
     export default {
         data() {
             return {
                 oldBook: oldBook,
-                libraryLogo: libraryLogo
+                libraryLogo: libraryLogo,
+                iowaRatification: iowaRatification
             }
         },
 
         methods: {
-            notifyApp: function(event) {
+            notifyApp: function (event) {
                 this.$emit('clicked', true)
+            },
+            isMobile() {
+                return this.window.width < 1000 ? true : false
             }
         }
     }
@@ -121,12 +128,34 @@
         text-align: center;
     }
 
+    .jumbotron {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .iowa-ratify-image {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 4em;
+        filter: drop-shadow(16px 16px 20px #FFCD00) invert(100%);
+    }
+
+@media only screen and (max-width: 2200px) { .display-3 { font-size: 4rem;} }
+@media only screen and (max-width: 1900px) { .display-3 { font-size: 3rem;} }
+@media only screen and (max-width: 1500px) { .display-3 { font-size: 2rem;} }
+
+.card-content {
+    font-weight: normal !important;
+}
+
+
     .site-card {
-        width: 800px;
         margin: 25px auto;
         box-shadow: 0 3px 1px -2px rgb(255, 255, 255, 0.20), 0 2px 2px 0 rgb(255, 255, 255, 0.14), 0 1px 5px 0 rgba(255, 255, 255, 0.12);
         background-color: rgba(255, 255, 255, 0.76) !important;
     }
+
+    @media only screen and (max-width: 500px) { .site-card { font-size: 10px; }}
 
     .site-card a {
         color: black !important;
