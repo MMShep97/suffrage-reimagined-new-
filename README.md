@@ -4,32 +4,36 @@ In honor of the 90th anniversary of women’s suffrage (2010), the Iowa Women’
 
 The Iowa Women's Archives created an online scrapbook exhibit to provide a brief introduction to Iowa’s suffrage history and point to local and state suffrage resources. Through late 2019 and into early 2020, the scrapbook was majorly redesigned in functionality and aesthetics to bolster its image for the 100th anniversary of women's suffrage. This is that project.
 
+[See the scrapbook in action](https://suffrage.lib.uiowa.edu/)
+
+❗ This project is no longer maintained by me. Any further development will take place [here under the university library organization](https://github.com/ui-libraries/suffrage-reimagined).
+
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Run your tests
+#### Run your tests
 ```
 npm run test
 ```
 
-### Lints and fixes files
+#### Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
+#### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ---------------------------------------------
