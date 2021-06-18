@@ -8,7 +8,10 @@ The Iowa Women's Archives created an online scrapbook exhibit to provide a brief
 
 ❗ This project is no longer maintained by me. Any further development will take place [here under the university library organization](https://github.com/ui-libraries/suffrage-reimagined).
 
-## Project setup
+
+## Development 
+
+#### Install necessary dependencies
 ```
 npm install
 ```
@@ -23,20 +26,6 @@ npm run serve
 npm run build
 ```
 
-#### Run your tests
-```
-npm run test
-```
-
-#### Lints and fixes files
-```
-npm run lint
-```
-
-#### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
----------------------------------------------
 
 ## Adding new pages for future developers / customers
 
@@ -53,6 +42,11 @@ Next, we will add navigation ability for the application...
 
 + Go into NavBar.vue (components folder), and add a list item section for the desired page (w/ accompanying html)
 
----------------------------------------------
+#### Optional Steps:
 
 If you would like to create a whole new year-range, you can do that to; it will just be more time-consuming. Simply follow the same pattern as everything else, and you should have no problem! Additionally, you will have to go into ScrapbookNavigation.vue and NavBar.vue to add new tabs (desktop and mobile).
+
+
+## Showcase
+
+![](documents/demo.gif)
